@@ -4,6 +4,7 @@ Como objetivo principal es constriur modelo que sea capaz de predecir la tempera
 Con el uso de datos historicos y usando la red neuronal MLp"Multilayer Perceptron".
 
 ### Descripcion del Dataset "WETHER PREDICTION"
+ URL del Dataset: https://www.kaggle.com/datasets/ananthr1/weather-prediction
  Es un dataset de datos meteorologicos  de la ciudad de Seattle, con datos  que sonb abarcados desde  Enero de 2012 hasta Diciembre de 2015.
  Cada fila representa un dia diferente, tiene columnas las cuales abaracan. **`[fecha,precipitacion,temperatura maxima,temperatura minima, viento y tipo de clima]`**.
  EL dataset contiene **1462** filas(datos) con 6 columnas de variables.
