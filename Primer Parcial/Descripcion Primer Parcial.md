@@ -1,4 +1,3 @@
-
 ### Objetivo
 Como objetivo principal es constriur modelo que sea capaz de predecir la temperatura maxima diaria en Seattle.
 Con el uso de datos historicos y usando la red neuronal MLp"Multilayer Perceptron".
@@ -44,4 +43,4 @@ R**2 -> (coeficiente de determinacion)
 Los cuales ayudan a mostrar que el modelo varia entre 2 grados centigrados (MAE), pero muestra  que llego  a comprender  un 83%  los datos de la tempreratura maxima.
 
 ### Prediccion para los 30 dias
-Se uso recursividad para esto, cada prediccion es la entrada para el proximo valor , se grafico  como se comporta  la prediccion  para cada dia de los 30.
+Se utilizó un enfoque recursivo para generar las predicciones: cada valor estimado se usa como entrada para predecir el siguiente día, simulando cómo evolucionaría la serie si solo tuviéramos acceso a las predicciones. Este método es útil para escenarios reales donde no se dispone de datos futuros y se requiere anticipar el comportamiento de la variable. Sin embargo, es importante considerar que el error puede acumularse con cada paso, ya que las predicciones se basan en valores previamente estimados y no en datos reales. Para mejorar la precisión, se podrían incorporar más variables del dataset o comparar este enfoque con otros modelos clásicos de series temporales. La gráfica resultante permite visualizar la tendencia y el comportamiento esperado de la temperatura máxima para los próximos 30 días, facilitando la toma de decisiones en áreas como agricultura, turismo o energía.
