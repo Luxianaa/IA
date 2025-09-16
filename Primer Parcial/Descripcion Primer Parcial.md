@@ -10,6 +10,7 @@ Con el uso de datos historicos y usando la red neuronal MLp"Multilayer Perceptro
 ### Desarrollo
 Como variable objetivo se tomo la temperatura maxima **`temp_max`** Para poder utilizar las variables de entrada se uspo **Lag** , una tecninca que se usa para "Forescasting" en MLP.
 Esta tecninca facilita la prediccion de dias anteriores , el valor futuro depende de los dias pasados.
+Se uso esta tecnica, ya que el la red neuronal MLP no es capaz de guardar datos no tiene memoria, por loq ue hay que crear un patron el cual le "haga recuerdo.
 
 ### Division de datos
 Se dividio el dataset en datos de entrenamiento con un 80% y para validacion 20%, es la tecnica comun para construir  un modelo firme y estructurado.
@@ -27,6 +28,7 @@ Se uso modelo MLP con una capa de entrada que recibe el tamano del ``lag`` o `W`
 La primera capa oculta se conecta con todas las entradas por la funcion **`nn.Linear()`**, con 64 neuronas trabaja y con funcion de activacion **`nn.ReLU()`**
 La segunda capa oculta se conecta con todas las entradas por la funcion `nn.Linear()`, de misma manera con 64 batches y usa la reactivacion.
 La capa de salida se conecta con la segunda capa oculta y tierne como valor final la `temperatura_maxima`=D_Out=1(una salida, un dato).
+Se utilizo este modelo porque  el MLP es capaz de capturar relaciones lineales y patrones que son complejos de deducir.
 ### Entrenamiento
 Se trabajo con 100 epocas  de entrenamiento y se calculo la perdida en cada una, la de validacion  y prediccion.
 Se utilizo el optimizador SGD y tambien se probo con Adam, con mejor resultado SGD por la  cantidad  de datos usados.
